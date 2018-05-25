@@ -1,0 +1,354 @@
+body {
+    color: #000000 !important;
+}
+
+h3 {
+    color: #000000 !important;
+}
+
+h4 {
+    color: #000000 !important;
+}
+
+
+.hideNow {
+    display: none;
+}
+
+.visibleNow {
+    display: block;
+}
+
+.top-header {
+    padding-bottom: 15px;
+    color:#000000 !important;
+}
+
+.block-child {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.s-b {
+    font-weight: bold;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.color-b {
+    color: #000000 !important;
+}
+
+.color-y {
+    color: #F9E500 !important;
+}
+
+.btn-y {
+    background-color: transparent !important;
+    border-color: #333333 !important;
+    color: #333333 !important;
+    font-size: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn-y-2 {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #333333 !important;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tooltip-custom {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.questions-block {
+    min-height: 400px;
+    border: 2px dashed #ddd;
+    box-shadow: 0 0 0 6px #fff, 0 0 0 10px #ddd, 0 0 0 20px #fff, 0 0 4px 20px #eee;
+}
+
+label.radio.ct-green {
+    font-size: 17px !important;
+}
+
+.col-md-10.questions-padding .text-left p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000 !important;
+}
+
+footer {
+    background-color: #ECEDF1 !important;
+    color: #000000 !important;
+}
+
+
+  /* MD */
+@media(min-width:768px) {
+	.blurred-container{
+        position:relative;
+        width:100%;
+        height: auto !important;
+        top:0;
+        left:0;
+        max-height: 100%;
+      }
+
+      .block-attention {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .block-green-h {
+        padding-left: 45px !important; 
+        padding-right: 0;
+    }
+
+    .block-green-line-r {
+        padding-right: 10px;
+    }
+
+    .block-green-line-l {
+        padding-left: 10px;
+    }
+
+    .block-green-f {
+        font-size: 18px;
+    }
+
+    .block-green-col-l {
+        padding-left: 45px; 
+        padding-right: 0;
+    }
+
+    .block-green-col-r {
+        padding-left:0; 
+        padding-right: 45px;
+    }
+
+    .reviews-p {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: left;
+        color: #565656 !important;
+        font-size: 17px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 2;
+    }
+
+    .q14-radio-h {
+        height: 35px !important;
+    }
+
+    .img-q15 {
+        background-image: url('../../assets/img/qg1.jpg'); 
+        height: 400px; 
+        width: 500px; 
+        margin: auto;
+    }
+
+    .position-checkbox-l {
+        position:absolute; 
+        top:19px; 
+        left:0px;
+    }
+
+    .position-checkbox-r {
+        position:absolute; 
+        top:19px; 
+        right:0px;
+    }
+
+    .img-start {
+        background-color: #ECEDF1 !important;
+    }
+
+    .panel-header-custom {
+        font-size: 28px !important;
+    }
+
+    .fa-angle-up, .fa-angle-down {
+        font-size: 35px !important;
+    }
+
+    .info-txt {
+        font-size: 15px !important;
+    }
+
+    .btn-start-test {
+        float: right !important;
+        margin-bottom: 20px;
+    }
+
+    .block-note-font {
+        color: #000000 !important;
+    }
+
+    .startTestBtn {
+        padding-top: 40px;
+    }
+
+    .block-test {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+}
+
+/* XS */
+@media(max-width:768px){
+    .container-fluid {
+        color: #000000 !important;
+    }
+
+    h3 {
+        font-size: 24px;
+        color: #000000;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+	.blurred-container {
+        position:relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        max-height: 100%;
+      }
+
+      .block-attention {
+        padding-left: 0;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .block-green-h {
+        padding-left: 15px !important; 
+        padding-right: 15px;
+    }
+
+    .block-green-line-r {
+        padding-right: 0;
+    }
+
+    .block-green-line-l {
+        padding-left: 0;
+    }
+
+    .block-green-f {
+        font-size: 14px;
+    }
+
+    .block-green-col-l {
+        padding-left: 0; 
+        padding-right: 0;
+    }
+
+    .block-green-col-r {
+        padding-left:0; 
+        padding-right: 0;
+    }
+
+    .reviews-p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left; 
+        color: #565656 !important;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 2;
+    }
+
+    .questions-padding {
+        padding-left: 15px !important;
+    }
+
+    .q14-radio-h {
+        height: 22px !important;
+    }
+
+    .img-q15 {
+        background-image: url('../../assets/img/qg1-mobile.jpg'); 
+        height: 243px; 
+        width: 270px; 
+        margin: auto;
+    }
+
+    .position-checkbox-l {
+        position:absolute; 
+        top:-5px; 
+        left:0px;
+    }
+
+    .position-checkbox-r {
+        position:absolute; 
+        top:-5px; 
+        right:0px;
+    }
+
+    .panel-header-custom {
+        font-size: 12px !important;
+        font-weight: bold;
+    }
+
+    .fa-angle-up, .fa-angle-down {
+        font-size: 30px !important;
+        position: absolute;
+        top:-7px;
+        right: 0;
+    }
+
+    .info-txt {
+        font-size: 11px !important;
+    }
+
+    .btn-start-test {
+        float: left !important;
+        margin-bottom: 20px;
+    }
+
+    .img-start {
+        background-color: #ECEDF1 !important;
+    }
+
+    .block-note-font {
+        color: #000000 !important;
+        font-size: 18px !important;
+        text-align: left;
+    }
+
+    .block-note {
+        padding-left: 15px;
+    }
+
+    .about-txt {
+        font-size: 18px !important;
+    }
+
+    .about-h {
+        font-size: 30px !important;
+    }
+
+    .startTestBtn {
+        padding-top: 20px;
+    }
+
+    .block-test {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+}
