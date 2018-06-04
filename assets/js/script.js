@@ -13,6 +13,7 @@ var timer = new Timer();
 var currentCardQ15 = 1;
 var sumPointsQ15 = 0;
 var resultMarkQ15 = 0;
+var isTestStarted = false;
 
 $('#popoverData').popover();
 $('#popoverData2').popover();
@@ -78,13 +79,16 @@ $('#section0-1').on("click", function () {
 });
 
 function startTest() {
-    $('#aboutTest').removeClass("visibleNow");
-    $('#aboutTest').addClass("hideNow");
-    $('#startTest').removeClass("visibleNow");
-    $('#startTest').addClass("hideNow");
+    if(!isTestStarted) {
+        $('#aboutTest').removeClass("visibleNow");
+        $('#aboutTest').addClass("hideNow");
+        $('#startTest').removeClass("visibleNow");
+        $('#startTest').addClass("hideNow");
 
-    $('#q-1').removeClass("hideNow");
-    $('#q-1').addClass("visibleNow");
+        $('#q-1').removeClass("hideNow");
+        $('#q-1').addClass("visibleNow");
+        isTestStarted = true;
+    }
 };
 
 function sendEmail(sendTo) {
