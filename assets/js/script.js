@@ -109,7 +109,7 @@ function validateEmail(email) {
 }
 
 function nextQuestion(num, fieldName) {
-    if ((num-1) < 14) {
+    if (parseInt(fieldName.slice(8, fieldName.length)) < 14) {
         var valueRadio = $('input[name="' + fieldName + '"]:checked').val();
     } else {
         if (num === 15) {
@@ -124,14 +124,14 @@ function nextQuestion(num, fieldName) {
         }
     }
 
-    currentObject = {number: num-1, value: valueRadio};
+    currentObject = {number: parseInt(fieldName.slice(8, fieldName.length)), value: valueRadio};
     arrayAnswers.push(currentObject);
 
     console.log(currentObject);
     console.log(arrayAnswers);
 
     if (num < 16) {
-        var currentQuestion = '#q-'+ (num-1);
+        var currentQuestion = '#q-'+ fieldName.slice(8, fieldName.length);
         var nextQuestion = '#q-' + num;
     
         $(currentQuestion).removeClass("visibleNow");
@@ -427,15 +427,15 @@ function getResults() {
         $('#result-show').removeClass("hideNow");
         $('#result-show').addClass("visibleNow");
 
-        if((sumPoints >= 13) && (sumPoints <= 37)) {
+        if(sumPoints <= 22) { //if((sumPoints >= 13) && (sumPoints <= 37)) {
             $('#result3').removeClass("hideNow");
             $('#result3').addClass("visibleNow");
             isResultText3 = true;
-        } else if((sumPoints >= 38) && (sumPoints <= 49)) {
+        } else if((sumPoints >= 23) && (sumPoints <= 34)) { //} else if((sumPoints >= 38) && (sumPoints <= 49)) {
             $('#result2').removeClass("hideNow");
             $('#result2').addClass("visibleNow");
             isResultText2 = true;
-        } else if((sumPoints >= 50) && (sumPoints <= 60)) {
+        } else if((sumPoints >= 35) && (sumPoints <= 45)) { //} else if((sumPoints >= 50) && (sumPoints <= 60)) {
             $('#result1').removeClass("hideNow");
             $('#result1').addClass("visibleNow");
             isResultText1 = true;
