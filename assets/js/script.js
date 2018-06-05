@@ -103,7 +103,7 @@ function sendEmail(sendTo) {
     Email.send("web-message@mail.ee",
         sendTo,
         "Результат тестирования Вашего ребенка",
-        "<h3 style='text-align: center;color:black;'>" + emailTextBase + "</h3><br><br> <h4 style='text-align: center;'>Вы набрали баллов - " + sumPoints + " из 60</h4>",
+        "<h3 style='text-align: center;color:black;'>" + emailTextBase + "</h3><br><br> <h4 style='text-align: center;'>Вы набрали баллов - " + sumPoints + " из 45</h4>",
         {token: "f3f4de8f-b91b-4501-b4b4-0b80a11aa0d2"});
 };
 

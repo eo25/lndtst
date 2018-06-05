@@ -90,6 +90,16 @@ footer {
     color: #000000 !important;
 }
 
+.qCard {
+    background: url('../img/q15-1-0.jpg') center no-repeat;
+    background-size: cover;
+    /* height: 125px; 190-125=65*/
+    height: 190px; 
+    /* width: 103px; 168-103=65 */
+    width: 168px;
+    margin: auto;
+}
+
 
   /* MD */
 @media(min-width:768px) {
