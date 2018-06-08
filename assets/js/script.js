@@ -93,18 +93,28 @@ function startTest() {
 
 function sendEmail(sendTo) {
     if (isResultText1) {
-        var emailTextBase = $('#result1').text();
+        var emailTextBase = $('#result1').text(); // Test Result 1
     } else if (isResultText2) {
-        var emailTextBase = $('#result2').text();
+        var emailTextBase = $('#result2').text(); // Test Result 2
     } else if (isResultText3) {
-        var emailTextBase = $('#result3').text();
+        var emailTextBase = $('#result3').text(); // Test Result 3
     }
 
-    Email.send("web-message@mail.ee",
-        sendTo,
-        "Результат тестирования Вашего ребенка",
-        "<h3 style='text-align: center;color:black;'>" + emailTextBase + "</h3><br><br> <h4 style='text-align: center;'>Вы набрали баллов - " + sumPoints + " из 45</h4>",
-        {token: "f3f4de8f-b91b-4501-b4b4-0b80a11aa0d2"});
+    //
+    // parameter  sendTo  - recepient of email
+    //
+
+    //
+    // "Результат тестирования Вашего ребенка" - header of email
+    //
+      
+    //
+    // emailTextBase  -  result text (this is one of the three options)
+    //
+    
+    //
+    // sumPoints - sum of all points (was inserted in email)
+    //
 };
 
 function validateEmail(email) {
