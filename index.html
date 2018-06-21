@@ -1033,4 +1033,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
         AOS.init();
     </script>
+    <script>
+	function calcResults() {
+	    const email = $('#user-email').val();
+	    if (validateEmail(email) === false) {
+		$('#user-email, #user-email-addon').css('border-color', 'red');
+		return false;
+	    }
+
+	    const sumPoints = +arrayAnswers.reduce((prev, cur) => prev + (parseFloat(cur) || 0), 0).toFixed(4);
+
+	    let result_of_test = 0;
+	    if (sumPoints <= 22) { //if((sumPoints >= 13) && (sumPoints <= 37)) {
+		result_of_test = 3;
+	    } else if ((sumPoints >= 23) && (sumPoints <= 34)) { //} else if((sumPoints >= 38) && (sumPoints <= 49)) {
+		result_of_test = 2;
+	    } else if ((sumPoints >= 35) && (sumPoints <= 45)) { //} else if((sumPoints >= 50) && (sumPoints <= 60)) {
+		result_of_test = 1;
+	    } else {
+		result_of_test = 3;
+	    }
+
+	    $('#result-f').removeClass("visibleNow").addClass("hideNow");
+	    if (result_of_test > 0) {
+		$('#result-show').removeClass("hideNow").addClass("visibleNow");
+		$('#result' + result_of_test).removeClass("hideNow").addClass("visibleNow");
+	    }
+
+	    $.ajax({
+		url: "https://vk.us18.list-manage.com/subscribe/post?u=716a605e3f1ae6c24e26ee2cc&amp;id=e3106a3f6e",
+		data: {
+		    EMAIL: email,
+		    ENDING: result_of_test,
+		    "b_716a605e3f1ae6c24e26ee2cc_e3106a3f6e": "",
+		    subscribe: "Subscribe"
+		},
+		dataType: 'jsonp',
+	    });
+
+	};
+    </script>
 </html>
