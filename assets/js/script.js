@@ -224,7 +224,7 @@ function runCardsTimer() {
 
     timer.addEventListener('secondsUpdated', function (e) {
         console.log(timer.getTimeValues().seconds);
-        if(timer.getTimeValues().seconds > 18) {
+        if(timer.getTimeValues().seconds > 7) {
             timer.stop();
             $('#q15-'+currentCardQ15+'-1').addClass('hideNow');
             $('#q15-empty').removeClass('hideNow');
